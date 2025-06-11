@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: tree-sitter/py-tree-sitter
+          ref: v0.20.1  # 👈 Pin to specific version
           submodules: recursive
 
       - name: Set up Python ${{ matrix.python-version }}
